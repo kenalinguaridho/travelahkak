@@ -20,7 +20,11 @@ img {
 }
 
 .navbar {
-    padding: 0
+    padding: 0;
+}
+
+.navbar-brand {
+    font-weight: 500;
 }
 
 .form {
