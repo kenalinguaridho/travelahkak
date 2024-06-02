@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,22 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/assets/style/style.css">
     <title>Flights</title>
+    <style>
+        #image {
+            background-image: url('/assets/images/flight-bg.jpg');
+        }
+
+        .icon {
+            max-width: 30px;
+            max-height: 20px;
+            margin: auto;
+        }
+        .card-image-height{
+            height: 200px;
+        }
+    </style>
 </head>
+
 <body>
     <section id="navbar">
         <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
@@ -59,5 +75,306 @@
             </div>
         </nav>
     </section>
+    <section id="image">
+        <form class="row tour-search-form">
+            <div class="input-group col-sm-2">
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Jakarta</option>
+                    <option value="1">Surabaya</option>
+                    <option value="2">Lampung</option>
+                    <option value="3">Medan</option>
+                    <option value="4">Semarang</option>
+                    <option value="5">Yogyakarta</option>
+                </select>
+                <img src="assets/images/swap.png" class="icon" alt="">
+                <select class="form-select" id="inputGroupSelect02">
+                    <option selected>Surabaya</option>
+                    <option value="1">Jakarta</option>
+                    <option value="2">Lampung</option>
+                    <option value="3">Medan</option>
+                    <option value="4">Semarang</option>
+                    <option value="5">Yogyakarta</option>
+                </select>
+                <select class="form-select" id="inputGroupSelect03">
+                    <option selected>1 Penumpang</option>
+                    <option value="1">2 Penumpang</option>
+                    <option value="2">3 Penumpang</option>
+                    <option value="3">4 Penumpang</option>
+                    <option value="4">5 Penumpang</option>
+                    <option value="5">6 Penumpang</option>
+                </select>
+                <select class="form-select" id="inputGroupSelect04">
+                    <option selected>Ekonomi</option>
+                    <option value="1">Bisnis</option>
+                    <option value="2">First Class</option>
+                </select>
+                <input type="date" id="departure_date" name="departure_date" placeholder="departure">
+                <input type="date" id="arrival_date" name="arrival_date" placeholder="arrival">
+                <button type="button" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+    </section>
+    <section id="flights" style="width: 90%;">
+        <div class="row mx-auto px-auto" >
+            <div class="col-sm-3">
+                <div class="filter">
+                    <div class="row">
+                        <div class="col">
+                            <h5 style="margin-bottom: 20px;">Filter:</h5>
+                        </div>
+                        <div class="col" style="text-align: end; padding:0; font-weight: 600;">
+                            <a href="#">
+                                <h5>Reset</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="transit">
+                        <label for="transit_count" style="margin-bottom: 10px;">Jumlah Transit</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Langsung
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                1 Transit
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                2 Transit
+                            </label>
+                        </div>
+                        <hr class="filter-separator">
+                    </div>
+                    <div class="airlines">
+                        <label for="transit_count" style="margin-bottom: 10px;">Maskapai</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Air Asia
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Garuda Air
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Emirates
+                            </label>
+                        </div>
+                        <hr class="filter-separator">
+                    </div>
+                    <div class="airlines">
+                        <label for="transit_count" style="margin-bottom: 10px;">Waktu Berangkat</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Malam ke Pagi
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Pagi ke Siang
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Siang ke Sore
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Sore ke Malam
+                            </label>
+                        </div>
+                        <hr class="filter-separator">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="best-deals">
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/bali-hd.jpg" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 725.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Jakarta - Bali</h6>
+                            <p>17-21 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/medan-hd.jpg" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 1.350.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Jakarta - Medan</h6>
+                            <p>14-16 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/yogyakarta-hd.jpg" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 1.125.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Lampung - Yogyakarta</h6>
+                            <p>22-25 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/semarang-hd.webp" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 1.225.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Lampung - Semarang</h6>
+                            <p>22-28 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/medan-hd.jpg" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 2.250.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Yogyakarta - Medan</h6>
+                            <p>14-16 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/semarang-hd.webp" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 1.825.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Medan - Semarang</h6>
+                            <p>14-18 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/lampung.webp" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 1.225.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Yogyakarta - Lampung</h6>
+                            <p>2-8 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/jakarta.jpg" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 725.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Semarang - Jakarta</h6>
+                            <p>22-28 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/australia-hd.jpg" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 9.225.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Jakarta - Sydney</h6>
+                            <p>1-4 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/thailand-hd.jpg" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 2.225.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Jakarta - Bangkok</h6>
+                            <p>5-10 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/singapura-hd.avif" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 1.165.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Jakarta - Singapore</h6>
+                            <p>6-8 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 16rem;">
+                        <div class="image-container">
+                            <img src="assets/images/jepang-hd.jpg" class="card-img-top card-image-height" alt="...">
+                            <span class="badge">Rp 4.245.000</span>
+                        </div>
+                        <div class="card-body">
+                            <h6>Jakarta - Tokyo</h6>
+                            <p>2-11 Juni 2024</p>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separator">
+        <hr class="styled-hr">
+        <p style="font-size: 35px;">Airline Partners</p>
+    </div>
+    <section id="airlines">
+        <img src="/assets/images/air-asia-logo.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/batik-air-logo.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/british-airlines.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/cathay-pacific.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/china-airlines.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/asiana.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/klm.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/korean-air.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/qantas-airline.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/sriwijaya-logo.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/royal-brunei.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/citilink-logo.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/turkish-airline.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/emirates-logo.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/etihad-airways-logo.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/malindo-air.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/japan-airlines.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/lion-air-logo.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/wings-air.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/malaysia-airlines.webp" class="airlines-logo" alt="">
+        <img src="/assets/images/singapore-airlines-logo.webp" class="airlines-logo" alt="">
+    </section>
+    <div class="separator">
+        <hr class="styled-hr">
+        <p style="font-size: 35px;">Payment Support</p>
+    </div>
+    <section id="payment">
+        <img src="/assets/images/payment.jpg" alt="">
+    </section>
 </body>
+
 </html>
