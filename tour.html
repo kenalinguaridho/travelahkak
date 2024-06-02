@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="icon" href="assets/images/flamingo.png" type="image/x-icon">
+    <style>
+        #image{
+            background-image: url('/assets/images/traveling.jpg');
+        }
+        /* .badge{
+            background-color: blue;
+        } */
+    </style>
+    <title>Tour</title>
+</head>
+
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+            <div class="container-fluid row justify-content-md-center">
+                <div class="container col-sm-3">
+                    <a class="brand align-middle navbar-brand" href="/index.html">
+                        <img src="/assets/images/flamingo.png" alt="Logo" width="17" height="18" class="">
+                        travelahkak
+                    </a>
+                </div>
+                <div class="menu col-sm-6 align-item-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav row">
+                        <li class="nav-item nav-link col-sm">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-link col-sm">
+                            <a class="nav-link" href="/flight.html">Flight</a>
+                        </li>
+                        <li class="nav-item nav-link col-sm">
+                            <a class="nav-link" href="#">Train</a>
+                        </li>
+                        <li class="nav-item nav-link col-sm">
+                            <a class="nav-link" href="#">Bus</a>
+                        </li>
+                        <li class="nav-item nav-link col-sm">
+                            <a class="nav-link" href="/tour.html">Tour</a>
+                        </li>
+                        <li class="nav-item nav-link col-sm">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu col-sm-2 align-item-center" id="auth">
+                    <ul class="navbar-nav row">
+                        <li class="nav-item nav-link col-lg-auto">
+                            <a class="nav-link" href="#">Sign In</a>
+                        </li>
+                        <li class="nav-item nav-link col-lg-auto">
+                            <a class="nav-link" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="image">
+        <form class="row tour-search-form">
+            
+            <div class="input-group col-sm-2">
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Group Tour</option>
+                    <option value="1">Individual</option>
+                </select>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Destination</option>
+                    <option value="1">Jepang</option>
+                    <option value="2">Thailand</option>
+                    <option value="3">Taiwan</option>
+                    <option value="4">Australia</option>
+                    <option value="5">Singapore</option>
+                </select>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Year</option>
+                    <option value="1">2024</option>
+                    <option value="2">2025</option>
+                </select>
+                <button type="button" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+    </section>
+    <div class="separator">
+        <hr class="styled-hr">
+        <p style="font-size: 35px;">Best Deals</p>
+    </div>
+    <section id="promo" class="best-deals">
+        <div class="card" style="width: 18rem;">
+            <div class="image-container">
+                <img src="assets/images/thailand-liburan.webp" class="card-img-top card-image-height" alt="...">
+                <span class="badge bg-success text-light">Best Price</span>
+            </div>
+            <div class="card-body">
+                <h6>4D Thailand</h6>
+                <p>Mulai dari<span/><font color="#3AA6B9"> Rp. 12.145.000</font></p>
+                <a href="#" class="btn btn-primary text-center">Booking Sekarang</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="image-container">
+                <img src="assets/images/sydney-aus.jpg" class="card-img-top card-image-height" alt="...">
+                <span class="badge bg-danger text-light">Hot Deal</span>
+            </div>
+            <div class="card-body">
+                <h6>8D Australia</h6>
+                <p>Mulai dari<span/><font color="#3AA6B9"> Rp. 18.225.000</font></p>
+                <a href="#" class="btn btn-primary text-center">Booking Sekarang</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="image-container">
+                <img src="assets/images/thailand-liburan.webp" class="card-img-top card-image-height" alt="...">
+                <span class="badge bg-success text-light">Best Price</span>
+            </div>
+            <div class="card-body">
+                <h6>4D Thailand</h6>
+                <p>Mulai dari<span/><font color="#3AA6B9"> Rp. 12.145.000</font></p>
+                <a href="#" class="btn btn-primary text-center">Booking Sekarang</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="image-container">
+                <img src="assets/images/jepang-gundam.jpg" class="card-img-top card-image-height" alt="...">
+                <span class="badge bg-danger text-light">Hot Deal</span>
+            </div>
+            <div class="card-body">
+                <h6>7D Jepang</h6>
+                <p>Mulai dari<span/><font color="3AA6B9"> Rp. 20.145.000</font></p>
+                <a href="#" class="btn btn-primary text-center">Booking Sekarang</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="image-container">
+                <img src="assets/images/travel-korean.jpg" class="card-img-top card-image-height" alt="...">
+                <span class="badge bg-danger text-light">Hot Deal</span>
+            </div>
+            <div class="card-body">
+                <h6>6D South Korean</h6>
+                <p>Mulai dari<span/><font color="3AA6B9"> Rp. 15.145.000</font></p>
+                <a href="#" class="btn btn-primary text-center">Booking Sekarang</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="image-container">
+                <img src="assets/images/travel-china.webp" class="card-img-top card-image-height" alt="...">
+                <span class="badge bg-success text-light">Best Price</span>
+            </div>
+            <div class="card-body">
+                <h6>8D China</h6>
+                <p>Mulai dari<span/><font color="3AA6B9"> Rp. 17.145.000</font></p>
+                <a href="#" class="btn btn-primary text-center">Booking Sekarang</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="image-container">
+                <img src="assets/images/travel-hongkong.jpg" class="card-img-top card-image-height" alt="...">
+                <span class="badge bg-success text-light">Best Price</span>
+            </div>
+            <div class="card-body">
+                <h6>7D Hongkong</h6>
+                <p>Mulai dari<span/><font color="3AA6B9"> Rp. 17.295.000</font></p>
+                <a href="#" class="btn btn-primary text-center">Booking Sekarang</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="image-container">
+                <img src="assets/images/travel-switzerland.jpg" class="card-img-top card-image-height" alt="...">
+                <span class="badge bg-danger text-light">Hot Deal</span>
+            </div>
+            <div class="card-body">
+                <h6>4D Switzerland</h6>
+                <p>Mulai dari<span/><font color="3AA6B9"> Rp. 18.245.000</font></p>
+                <a href="#" class="btn btn-primary text-center">Booking Sekarang</a>
+            </div>
+        </div>
+    </section>
+    <div class="separator">
+        <hr class="styled-hr">
+        <p style="font-size: 35px;">Payment Support</p>
+    </div>
+    <section id="payment">
+        <img src="/assets/images/payment.jpg" alt="">
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+body {
+    padding-top: 53px;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+.brand {
+    padding-left: 15px;
+}
+
+img {
+    margin-right: 5px;
+}
+
+.navbar {
+    padding: 0
+}
+
+.form {
+    margin: 0;
+    margin-top: 200px;
+    background-color: aquamarine;
+    width: 70%;
+    padding: 0;
+    border-radius: 5px;
+}
+
+#image {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+
+.centered-content {
+    align-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.styled-hr {
+    border: none;
+    height: 5px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+
+.separator {
+    position: relative;
+    text-align: center;
+    margin: 80px auto 0 auto;
+    width: 90%;
+}
+
+.separator hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 0;
+}
+
+.separator p {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #fff;
+    top: -0.8em;
+    font-size: 1.5em;
+}
+
+.best-deals {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card{
+    margin-bottom: 25px;
+}
+
+.card-image-height {
+    height: 300px;
+    object-fit: cover;
+}
+
+.image-container {
+    position: relative;
+}
+
+.card .card-body p {
+    font-size: 13px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #ffc107;
+    color: #212529;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.tour-search-form {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 70%;
+    background-color: rgba(51, 51, 51, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.tour-search-form .input-group {
+    font-size: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Agar elemen bisa turun ke baris berikutnya jika ruang tidak cukup */
+    gap: 10px;
+}
+
+.card-body .btn {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+#payment {
+    margin: auto;
+    padding: auto;
+    height: 32vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+#airlines {
+    width: 90%;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+
+.airlines-logo{
+    min-width: 100px;
+}
